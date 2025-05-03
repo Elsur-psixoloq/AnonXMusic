@@ -7,28 +7,28 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("19769686"))
+API_HASH = getenv("515b64f5d2d955cdd6aa85a808fd4cb4")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7128782242:AAENypkyECvS57mm7nGhIQNvqkTWQS2VLeI")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://ravigotdu18272:<db_password>@cluster0.ifr2tes.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002621326403", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("OWNER_ID", 6671591267))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("nergizherokbot")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HRKU-d7849f0d-bd49-417a-9a6f-1453c10ad58a")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -39,8 +39,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NergizMusicSupport")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NergizSupport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -62,11 +62,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("AgEtqVYAGz638XNJqcWbN-ucFRrNL7DVYs63aqq-Q8ub8bLhjrZrIrggI566Zcg0ksoiJ3OVKlaBhzUn17t6dYWvpYjtSMB7xa9Atf0vTuMKj5n4uMjakJIkgh7cNubq4I5llrf2PeFxwnVyDu1PnZP0j0wGoHl1G8FPY6uV2mAVTtPV8uXAxw4NjASUfLbZ-o6qA6fuf5C738gtl6dgRQU3PNZCmeIV9ZxeQHdjR_ZJU5v_qATWE12bt9LhUXEUruqR7cvu8Juh4AXyHbBe_veLWNtzOisXfzUmpfX4Fs-dH5Ykk0FGnQSkQ6UkWylUdPYtj7wWHZfnIGztSC26IWUaLoFv_wAAAAGC_6I6AA", None)
+STRING2 = getenv("AgEtqVYAGz638XNJqcWbN-ucFRrNL7DVYs63aqq-Q8ub8bLhjrZrIrggI566Zcg0ksoiJ3OVKlaBhzUn17t6dYWvpYjtSMB7xa9Atf0vTuMKj5n4uMjakJIkgh7cNubq4I5llrf2PeFxwnVyDu1PnZP0j0wGoHl1G8FPY6uV2mAVTtPV8uXAxw4NjASUfLbZ-o6qA6fuf5C738gtl6dgRQU3PNZCmeIV9ZxeQHdjR_ZJU5v_qATWE12bt9LhUXEUruqR7cvu8Juh4AXyHbBe_veLWNtzOisXfzUmpfX4Fs-dH5Ykk0FGnQSkQ6UkWylUdPYtj7wWHZfnIGztSC26IWUaLoFv_wAAAAGC_6I6AA", None)
+STRING3 = getenv("AgEtqVYAGz638XNJqcWbN-ucFRrNL7DVYs63aqq-Q8ub8bLhjrZrIrggI566Zcg0ksoiJ3OVKlaBhzUn17t6dYWvpYjtSMB7xa9Atf0vTuMKj5n4uMjakJIkgh7cNubq4I5llrf2PeFxwnVyDu1PnZP0j0wGoHl1G8FPY6uV2mAVTtPV8uXAxw4NjASUfLbZ-o6qA6fuf5C738gtl6dgRQU3PNZCmeIV9ZxeQHdjR_ZJU5v_qATWE12bt9LhUXEUruqR7cvu8Juh4AXyHbBe_veLWNtzOisXfzUmpfX4Fs-dH5Ykk0FGnQSkQ6UkWylUdPYtj7wWHZfnIGztSC26IWUaLoFv_wAAAAGC_6I6AA", None)
+STRING4 = getenv("AgEtqVYAGz638XNJqcWbN-ucFRrNL7DVYs63aqq-Q8ub8bLhjrZrIrggI566Zcg0ksoiJ3OVKlaBhzUn17t6dYWvpYjtSMB7xa9Atf0vTuMKj5n4uMjakJIkgh7cNubq4I5llrf2PeFxwnVyDu1PnZP0j0wGoHl1G8FPY6uV2mAVTtPV8uXAxw4NjASUfLbZ-o6qA6fuf5C738gtl6dgRQU3PNZCmeIV9ZxeQHdjR_ZJU5v_qATWE12bt9LhUXEUruqR7cvu8Juh4AXyHbBe_veLWNtzOisXfzUmpfX4Fs-dH5Ykk0FGnQSkQ6UkWylUdPYtj7wWHZfnIGztSC26IWUaLoFv_wAAAAGC_6I6AA", None)
+STRING5 = getenv("AgEtqVYAGz638XNJqcWbN-ucFRrNL7DVYs63aqq-Q8ub8bLhjrZrIrggI566Zcg0ksoiJ3OVKlaBhzUn17t6dYWvpYjtSMB7xa9Atf0vTuMKj5n4uMjakJIkgh7cNubq4I5llrf2PeFxwnVyDu1PnZP0j0wGoHl1G8FPY6uV2mAVTtPV8uXAxw4NjASUfLbZ-o6qA6fuf5C738gtl6dgRQU3PNZCmeIV9ZxeQHdjR_ZJU5v_qATWE12bt9LhUXEUruqR7cvu8Juh4AXyHbBe_veLWNtzOisXfzUmpfX4Fs-dH5Ykk0FGnQSkQ6UkWylUdPYtj7wWHZfnIGztSC26IWUaLoFv_wAAAAGC_6I6AA", None)
 
 
 BANNED_USERS = filters.user()
